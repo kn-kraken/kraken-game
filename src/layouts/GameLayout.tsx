@@ -11,6 +11,7 @@ type GameLayoutProps = {
 
 export default function GameLayout({ children }: GameLayoutProps) {
 	const [decisionsInfo, setDecisionsInfo] = useState([]);
+	const [currentEventIndex, setCurrentEventIndex] = useState(0);
 
 	const [health, setHealth] = useState(50);
 	const [stress, setStress] = useState(50);
@@ -36,9 +37,16 @@ export default function GameLayout({ children }: GameLayoutProps) {
 		}
 	};
 
+	const handleNextEvent = () => {
+		setCurrentEventIndex(
+			scenario[currentEventIndex].event_order_scenario_1
+		);
+	};
+
 	useEffect(() => {
-		const decisions = scenario[0].decisions;
-		const stats = scenario[0].stats_changes;
+		if (!scenario[currentEventIndex]) return;
+		const decisions = scenario[currentEventIndex].decisions;
+		const stats = scenario[currentEventIndex].stats_changes;
 		const filteredDecisions = decisions.filter(
 			(decision) => stats[decision]
 		);
@@ -50,7 +58,14 @@ export default function GameLayout({ children }: GameLayoutProps) {
 			};
 		});
 		setDecisionsInfo(mappedStats);
-	}, []);
+	}, [currentEventIndex]);
+
+	if (!scenario[currentEventIndex])
+		return (
+			<div className="min-h-screen flex items-center justify-center">
+				<h1 className="text-3xl font-bold">Koniec gry!</h1>
+			</div>
+		);
 
 	return (
 		<div className="min-h-screen bg-gray-100 flex">
@@ -65,7 +80,8 @@ export default function GameLayout({ children }: GameLayoutProps) {
 				<BoardLayout
 					cardsInfo={decisionsInfo}
 					handleStatChange={handleStatChange}
-					description={scenario[0].description}
+					description={scenario[currentEventIndex]?.description}
+					handleNextEvent={handleNextEvent}
 				>
 					{children}
 				</BoardLayout>

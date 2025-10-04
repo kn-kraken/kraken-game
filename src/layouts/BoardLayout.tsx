@@ -14,6 +14,7 @@ export default function BoardLayout({
 	cardsInfo,
 	description,
 	handleStatChange,
+	handleNextEvent,
 }: BoardLayoutProps) {
 	return (
 		<div className="min-h-screen bg-gray-100 flex flex-col">
@@ -26,6 +27,7 @@ export default function BoardLayout({
 				<DecisionCardContainer
 					cardsInfo={cardsInfo}
 					handleStatChange={handleStatChange}
+					handleNextEvent={handleNextEvent}
 				/>
 			</div>
 		</div>

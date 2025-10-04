@@ -19,6 +19,7 @@ type DragConstraintsProps = {
 export default function DecisionCardContainer({
 	cardsInfo,
 	handleStatChange,
+	handleNextEvent,
 }: DragConstraintsProps) {
 	const [cards, setCards] = useState<CardInfo[]>([]);
 	const ref = useRef<HTMLDivElement | null>(null);
@@ -48,6 +49,7 @@ export default function DecisionCardContainer({
 					handleStatChange(stat, value as number);
 				}
 			});
+			handleNextEvent();
 		}
 	};
 

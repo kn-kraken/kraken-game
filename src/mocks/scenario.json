@@ -46,5 +46,36 @@
         "rodzaj_zatrudnienia": "brak umowy"
       }
     }
+  },
+  {
+    "description": "Twój szef proponuje Ci dodatkowe zadanie, po którym dostajesz gwarancję awansu – decydujesz się?",
+    "decisions": [
+      "Tak",
+      "Nie"
+    ],
+    "event_order_scenario_1": 8,
+    "event_order_scenario_2": "",
+    "stats_changes": {
+      "Tak": {
+        "zdrowie": -5,
+        "stres": 10,
+        "relacje": -10,
+        "mądrość": 30,
+        "angel": "Super szansa, by pokazać swoją wiedzę! Jednakże pamiętaj mieć czas na rodzinę!"
+      },
+      "Nie": {
+        "zdrowie": 0,
+        "stres": 0,
+        "relacje": 0,
+        "mądrość": 0,
+        "devil": "Po co wykonywać dodatkową pracę? Na pewno jeszcze będzie szansa na awans bez nadgodzin!"
+      }
+    },
+    "special_conditions": {
+      "Tak": {
+        "wysokość_wypłaty": 9000
+      },
+      "Nie": {}
+    }
   }
 ]
