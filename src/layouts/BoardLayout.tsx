@@ -1,6 +1,9 @@
+import Angel from "../components/Angel";
 import DecisionCardContainer, {
   type CardInfo,
 } from "../components/DecisionCardContainer";
+import Devil from "../components/Devil";
+import { useGameState } from "../hooks/useGame";
 
 type BoardLayoutProps = {
   children: React.ReactNode;
@@ -16,10 +19,14 @@ export default function BoardLayout({
   handleStatChange,
   handleNextEvent,
 }: BoardLayoutProps) {
+  const gameState = useGameState();
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
-      <div className="flex-1">row1</div>
-      <div className="flex-2">
+      <div className="flex-1 relative">
+        <Devil message={gameState.devilInfo} />
+        <Angel message={gameState.angelInfo} />
+      </div>
+      <div className="flex-2 flex items-end w-full">
         {children}
         <p className="p-4 text-lg">{description}</p>
       </div>

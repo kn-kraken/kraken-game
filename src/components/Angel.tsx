@@ -28,7 +28,7 @@ export default function Angel({ message }: Props) {
           className="w-64 h-32 absolute top-0 left-0 transform -translate-x-[80%] -translate-y-16"
         />
         <div className="absolute max-w-[8rem] left-0 top-0 text-xs -translate-x-[110%] -translate-y-8">
-          test tes 123 few few few few few few
+          {message}
         </div>
       </div>
     </div>
