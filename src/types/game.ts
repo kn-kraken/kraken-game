@@ -7,14 +7,14 @@ export interface PlayerStats {
 }
 
 // Life event card structure
-export interface LifeCard {
-  id: string;
-  title: string;
-  description: string;
-  choices: Choice[];
-  minAge?: number; // Optional age requirement
-  maxAge?: number;
-}
+// export interface LifeCard {
+//   id: string;
+//   title: string;
+//   description: string;
+//   choices: Choice[];
+//   minAge?: number; // Optional age requirement
+//   maxAge?: number;
+// }
 
 // Choice options for each card
 export interface Choice {
@@ -34,7 +34,6 @@ export interface ChoiceEffects {
 // Overall game state
 export interface GameState {
   playerStats: PlayerStats;
-  currentCard: LifeCard | null;
   gamePhase: GamePhase;
   turnNumber: number;
   gameHistory: GameHistoryEntry[];
@@ -64,7 +63,6 @@ export interface GameHistoryEntry {
 // Action types for the reducer
 export const GameActionType = {
   START_GAME: "START_GAME",
-  DRAW_CARD: "DRAW_CARD",
   MAKE_CHOICE: "MAKE_CHOICE",
   END_TURN: "END_TURN",
   RESET_GAME: "RESET_GAME",
@@ -77,11 +75,6 @@ export type GameActionType =
 // Specific action interfaces
 export interface StartGameAction {
   type: typeof GameActionType.START_GAME;
-}
-
-export interface DrawCardAction {
-  type: typeof GameActionType.DRAW_CARD;
-  payload: LifeCard;
 }
 
 export interface MakeChoiceAction {
@@ -105,14 +98,13 @@ export interface UpdateStatsAction {
   payload: Partial<PlayerStats>;
 }
 
-export interface Round {
+export interface DrawInfo {
   description: string;
   life_period: string[];
   decisions: Decision[];
   angel: string;
   devil: string;
   stats_changes: Record<string, StatChange>;
-  panel_to_save?: any; // Define this type based on what you want to save
 }
 export interface Decision {
   id: string;
@@ -120,11 +112,13 @@ export interface Decision {
   // Add other decision properties as needed
 }
 
-export enum StatType {
-  HEALTH = "health",
-  MONEY = "money",
-  SAVINGS = "savings",
-}
+export const StatType = {
+  HEALTH: "health",
+  MONEY: "money",
+  SAVINGS: "savings",
+} as const;
+
+export type StatType = (typeof StatType)[keyof typeof StatType];
 
 export type StatChange = {
   [K in StatType]?: number;
@@ -133,7 +127,6 @@ export type StatChange = {
 // Union type for all actions
 export type GameAction =
   | StartGameAction
-  | DrawCardAction
   | MakeChoiceAction
   | EndTurnAction
   | ResetGameAction

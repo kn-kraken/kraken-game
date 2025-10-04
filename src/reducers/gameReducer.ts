@@ -24,17 +24,16 @@ const applyStatChanges = (
   return {
     age: changes.age ?? currentStats.age,
     health: clampValue(currentStats.health + (changes.health ?? 0), 0, 100),
-    money: Math.max(0, currentStats.money + (changes.money ?? 0)), // Money can't go below 0
-    savings: Math.max(0, currentStats.savings + (changes.savings ?? 0)), // Savings can't go below 0
+    money: Math.max(0, currentStats.money + (changes.money ?? 0)),
+    savings: Math.max(0, currentStats.savings + (changes.savings ?? 0)),
   };
 };
 
 // Initial game state
 export const initialGameState: GameState = {
   playerStats: { ...INITIAL_PLAYER_STATS },
-  currentCard: null,
   gamePhase: GamePhase.SETUP,
-  turnNumber: 0,
+  turnNumber: 18,
   gameHistory: [],
   isGameActive: false,
 };
@@ -52,13 +51,6 @@ export const gameReducer = (
         gamePhase: GamePhase.CARD_DISPLAY,
         isGameActive: true,
         turnNumber: 1,
-      };
-
-    case GameActionType.DRAW_CARD:
-      return {
-        ...state,
-        currentCard: action.payload,
-        gamePhase: GamePhase.CARD_DISPLAY,
       };
 
     case GameActionType.MAKE_CHOICE: {
@@ -99,7 +91,6 @@ export const gameReducer = (
           ...state.playerStats,
           age: newAge,
         },
-        currentCard: null,
         gamePhase: isGameOver ? GamePhase.GAME_OVER : GamePhase.CARD_DISPLAY,
         turnNumber: state.turnNumber + 1,
         isGameActive: !isGameOver,
@@ -122,7 +113,6 @@ export const gameReducer = (
 
 // Selector functions for easy state access
 export const getPlayerStats = (state: GameState) => state.playerStats;
-export const getCurrentCard = (state: GameState) => state.currentCard;
 export const getGamePhase = (state: GameState) => state.gamePhase;
 export const isGameActive = (state: GameState) => state.isGameActive;
 export const getGameHistory = (state: GameState) => state.gameHistory;

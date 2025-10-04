@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import type { LifeCard, Choice, PlayerStats } from "../types/game";
+import type { Choice, PlayerStats } from "../types/game";
 import { GameActionType } from "../types/game";
 import { GameContext } from "../context/GameContext";
 
@@ -28,13 +28,6 @@ export const useGameActions = () => {
     dispatch({ type: GameActionType.START_GAME });
   };
 
-  const drawCard = (card: LifeCard) => {
-    dispatch({
-      type: GameActionType.DRAW_CARD,
-      payload: card,
-    });
-  };
-
   const makeChoice = (choice: Choice, cardTitle: string) => {
     dispatch({
       type: GameActionType.MAKE_CHOICE,
@@ -59,7 +52,6 @@ export const useGameActions = () => {
 
   return {
     startGame,
-    drawCard,
     makeChoice,
     endTurn,
     resetGame,
@@ -71,12 +63,6 @@ export const useGameActions = () => {
 export const usePlayerStats = () => {
   const { state } = useGameContext();
   return state.playerStats;
-};
-
-// Hook for current card
-export const useCurrentCard = () => {
-  const { state } = useGameContext();
-  return state.currentCard;
 };
 
 // Hook for game status
