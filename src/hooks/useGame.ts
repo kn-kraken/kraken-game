@@ -50,12 +50,27 @@ export const useGameActions = () => {
     });
   };
 
+  const addDevilMsg = (msg: string) => {
+    dispatch({
+      type: GameActionType.CALL_DEVIL,
+      payload: { message: msg },
+    });
+  };
+  const addAngelMsg = (msg: string) => {
+    dispatch({
+      type: GameActionType.CALL_ANGEL,
+      payload: { message: msg },
+    });
+  };
+
   return {
     startGame,
     makeChoice,
     endTurn,
     resetGame,
     updateStats,
+    addDevilMsg,
+    addAngelMsg,
   };
 };
 

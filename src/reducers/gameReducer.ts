@@ -80,6 +80,18 @@ export const gameReducer = (
       };
     }
 
+    case GameActionType.CALL_ANGEL:
+      return {
+        ...state,
+        angelInfo: action.payload.message,
+      };
+
+    case GameActionType.CALL_DEVIL:
+      return {
+        ...state,
+        devilInfo: action.payload.message,
+      };
+
     case GameActionType.END_TURN: {
       const newAge = state.playerStats.age + 1;
       const isGameOver = newAge > RETIREMENT_AGE;

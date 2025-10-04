@@ -6,7 +6,7 @@ function App() {
   const { gamePhase } = useGameState();
 
   return (
-    <div className="relative min-h-screen h-screen w-screen">
+    <div className="relative min-h-screen h-screen w-screen overflow-hidden">
       {gamePhase === "setup" ? <SelectGender /> : <GameLayout />}
     </div>
   );
