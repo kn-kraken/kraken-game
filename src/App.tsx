@@ -1,7 +1,10 @@
 import { useState } from "react";
 import AnimatedNumbers from "react-animated-numbers";
-import CardContainer, { type CardInfo } from "./components/CardContainer";
+import DecisionCardContainer, {
+	type CardInfo,
+} from "./components/DecisionCardContainer";
 import ProgressBar from "./components/ProgressBar";
+import GameLayout from "./layouts/GameLayout";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -14,10 +17,12 @@ function App() {
 
 	const MAX_AGE = 65;
 
+	return <GameLayout children={undefined} />;
+
 	return (
 		<>
 			<ProgressBar max={MAX_AGE} value={age} size="lg" />
-			<CardContainer cardsInfo={cardInfo} />
+			<DecisionCardContainer cardsInfo={cardInfo} />
 			<AnimatedNumbers
 				animateToNumber={count}
 				fontStyle={{ fontSize: 48 }}

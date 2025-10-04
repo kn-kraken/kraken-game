@@ -10,14 +10,5 @@ export default function Counter({ target = 100 }) {
 		return () => controls.stop();
 	}, [target]);
 
-	return <motion.pre style={text}>{rounded}</motion.pre>;
+	return <motion.pre className="text-6xl text-black">{rounded}</motion.pre>;
 }
-
-/**
- * ==============   Styles   ================
- */
-
-const text = {
-	fontSize: 64,
-	color: "#8df0cc",
-};
