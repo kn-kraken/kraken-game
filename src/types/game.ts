@@ -38,6 +38,8 @@ export interface GameState {
   turnNumber: number;
   gameHistory: GameHistoryEntry[];
   isGameActive: boolean;
+  devilInfo?: string;
+  angelInfo?: string;
 }
 
 // Different phases of the game
@@ -67,6 +69,8 @@ export const GameActionType = {
   END_TURN: "END_TURN",
   RESET_GAME: "RESET_GAME",
   UPDATE_STATS: "UPDATE_STATS",
+  CALL_ANGEL: "CALL_ANGEL",
+  CALL_DEVIL: "CALL_DEVIL",
 } as const;
 
 export type GameActionType =
@@ -130,7 +134,9 @@ export type GameAction =
   | MakeChoiceAction
   | EndTurnAction
   | ResetGameAction
-  | UpdateStatsAction;
+  | UpdateStatsAction
+  | CallAngelAction
+  | CallDevilAction;
 
 // Initial default values
 export const INITIAL_PLAYER_STATS: PlayerStats = {
@@ -142,3 +148,41 @@ export const INITIAL_PLAYER_STATS: PlayerStats = {
 
 export const RETIREMENT_AGE = 65;
 export const STARTING_AGE = 18;
+
+export interface StatsChanges {
+  zdrowie: number;
+  stres: number;
+  relacje: number;
+  mądrość: number;
+  angel?: string;
+  devil?: string;
+}
+
+export interface SpecialConditions {
+  status_zawodowy?: string;
+  wysokość_wypłaty?: number;
+  rodzaj_zatrudnienia?: string;
+}
+
+export interface Scenario {
+  description: string;
+  decisions: string[];
+  event_order_scenario_1: number;
+  event_order_scenario_2: number;
+  stats_changes: Record<string, StatsChanges>;
+  special_conditions: Record<string, SpecialConditions>;
+}
+
+export interface CallAngelAction {
+  type: typeof GameActionType.CALL_ANGEL;
+  payload: {
+    message: string;
+  };
+}
+
+export interface CallDevilAction {
+  type: typeof GameActionType.CALL_DEVIL;
+  payload: {
+    message: string;
+  };
+}
