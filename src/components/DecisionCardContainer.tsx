@@ -1,18 +1,26 @@
 import * as motion from "motion/react-client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import DecisionCard from "./DecisionCard";
 import { AnimatePresence } from "motion/react";
 
-export type CardInfo = { description: string };
+export type CardInfo = {
+	description: string;
+	zdrowie: number;
+	stres: number;
+	relacje: number;
+	wiedza: number;
+};
 
 type DragConstraintsProps = {
-	cardsInfo?: CardInfo[];
+	cardsInfo: CardInfo[];
+	handleStatChange: (stat: string, value: number) => void;
 };
 
 export default function DecisionCardContainer({
 	cardsInfo,
+	handleStatChange,
 }: DragConstraintsProps) {
-	const [cards, setCards] = useState(cardsInfo || []);
+	const [cards, setCards] = useState<CardInfo[]>([]);
 	const ref = useRef<HTMLDivElement | null>(null);
 	const containerVariants = {
 		animate: {
@@ -22,22 +30,32 @@ export default function DecisionCardContainer({
 		},
 	};
 
-	const handleDragEnd = (childRef, index) => {
+	const handleDragEnd = (
+		childRef: React.RefObject<HTMLDivElement | null>,
+		index: number
+	): void => {
 		const containerRect = ref.current?.getBoundingClientRect();
 		const dragRect = childRef.current?.getBoundingClientRect();
 		const containerHeight = containerRect?.height || 0;
 
 		if (!dragRect || !containerRect) return;
-		console.log({ dupa: dragRect.top, container: containerRect.top });
 		const isOutside = dragRect?.top < containerRect?.top - containerHeight;
 
 		if (isOutside) {
 			setCards((prev) => prev.filter((_, i) => i !== index));
-			console.log("Dragged outside constraint!");
-		} else {
-			console.log("Within constraint");
+			Object.entries(cards[index]).forEach(([stat, value]) => {
+				if (stat !== "description") {
+					handleStatChange(stat, value as number);
+				}
+			});
 		}
 	};
+
+	useEffect(() => {
+		if (cardsInfo) {
+			setCards(cardsInfo);
+		}
+	}, [cardsInfo]);
 
 	return (
 		<motion.div
@@ -57,10 +75,10 @@ export default function DecisionCardContainer({
 						exit={{ scale: 0 }}
 					>
 						<DecisionCard
-							containerRef={ref}
 							handleDragEnd={(childRef) =>
 								handleDragEnd(childRef, index)
 							}
+							handleStatChange={handleStatChange}
 							frontContent={card.description}
 						/>
 					</motion.div>

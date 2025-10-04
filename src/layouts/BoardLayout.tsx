@@ -4,21 +4,29 @@ import DecisionCardContainer, {
 
 type BoardLayoutProps = {
 	children: React.ReactNode;
+	cardsInfo: CardInfo[];
+	description: string;
+	handleStatChange: (stat: string, value: number) => void;
 };
 
-const cardInfo: CardInfo[] = [
-	{ description: "Sraka" },
-	{ description: "Dupa" },
-	{ description: "Chuj" },
-];
-
-export default function BoardLayout({ children }: BoardLayoutProps) {
+export default function BoardLayout({
+	children,
+	cardsInfo,
+	description,
+	handleStatChange,
+}: BoardLayoutProps) {
 	return (
 		<div className="min-h-screen bg-gray-100 flex flex-col">
 			<div className="flex-1">row1</div>
-			<div className="flex-2">{children}</div>
+			<div className="flex-2">
+				{children}
+				<p className="p-4 text-lg">{description}</p>
+			</div>
 			<div className="flex-1">
-				<DecisionCardContainer cardsInfo={cardInfo} />
+				<DecisionCardContainer
+					cardsInfo={cardsInfo}
+					handleStatChange={handleStatChange}
+				/>
 			</div>
 		</div>
 	);

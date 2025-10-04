@@ -2,7 +2,8 @@ import * as motion from "motion/react-client";
 import { useRef } from "react";
 
 type CardProps = {
-	handleDragEnd: (event: any) => void;
+	handleDragEnd: (childRef: React.RefObject<HTMLDivElement | null>) => void;
+	handleStatChange: (stat: string, value: number) => void;
 	frontContent?: string;
 	backContent?: string;
 };
@@ -14,9 +15,9 @@ export default function DecisionCard({
 }: CardProps) {
 	const ref = useRef<HTMLDivElement | null>(null);
 	const cardVariants = {
-		initial: {
-			rotateY: 180,
-		},
+		// initial: {
+		// 	rotateY: 180,
+		// },
 		animate: {
 			rotateY: 0,
 		},
