@@ -1,5 +1,6 @@
 import InventoryCardContainer from "../components/InventoryCardContainer";
 import StatusBar from "../components/StatusBar";
+import YearCounter from "../components/YearCounter";
 import BoardLayout from "./BoardLayout";
 
 type GameLayoutProps = {
@@ -15,6 +16,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
 				<StatusBar label="Health" value={75} />
 				<StatusBar label="Health" value={75} />
 				<StatusBar label="Health" value={75} />
+				<YearCounter />
 			</div>
 			<div className="flex-2">
 				<BoardLayout>{children}</BoardLayout>
