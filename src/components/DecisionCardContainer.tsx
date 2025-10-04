@@ -22,7 +22,7 @@ export default function DecisionCardContainer({
 
 	return (
 		<motion.div
-			className="flex rounded-xl gap-3 p-3 perspective-distant h-40"
+			className="flex rounded-xl p-3 perspective-distant h-40 justify-between"
 			ref={constraintsRef}
 			variants={containerVariants}
 			animate="animate"

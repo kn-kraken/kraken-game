@@ -14,22 +14,20 @@ export default function InventoryCardContainer() {
 	const [cards, setCards] = useState<string[]>(["Card 1"]);
 
 	return (
-		<div>
+		<motion.div
+			className="flex flex-col gap-y-2 items-center"
+			variants={containerVariants}
+			initial="initial"
+			animate="animate"
+		>
 			<button
 				onClick={() => setCards([...cards, `Card ${cards.length + 1}`])}
 			>
 				Add Card
 			</button>
-			<motion.div
-				className="flex flex-col gap-y-2"
-				variants={containerVariants}
-				initial="initial"
-				animate="animate"
-			>
-				{cards.map((card, index) => (
-					<InventoryCard key={index} description={card} />
-				))}
-			</motion.div>
-		</div>
+			{cards.map((card, index) => (
+				<InventoryCard key={index} description={card} />
+			))}
+		</motion.div>
 	);
 }

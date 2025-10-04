@@ -21,7 +21,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
 			<div className="flex-2">
 				<BoardLayout>{children}</BoardLayout>
 			</div>
-			<div>
+			<div className="flex-1">
 				<InventoryCardContainer />
 			</div>
 		</div>

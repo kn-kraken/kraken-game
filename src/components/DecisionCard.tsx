@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import React from "react";
+import React, { useRef } from "react";
 
 type CardProps = {
 	constraintsRef: React.RefObject<HTMLDivElement | null>;
@@ -8,10 +8,10 @@ type CardProps = {
 };
 
 export default function DecisionCard({
-	constraintsRef,
 	frontContent = "🎮",
 	backContent = "⭐",
 }: CardProps) {
+	const ref = useRef(null);
 	const cardVariants = {
 		initial: {
 			rotateY: 180,
@@ -24,14 +24,16 @@ export default function DecisionCard({
 	return (
 		<motion.div
 			drag
-			dragConstraints={constraintsRef}
-			dragElastic={0.2}
+			dragConstraints={ref}
+			ref={ref}
+			dragElastic={1}
 			className="h-40 w-28 relative cursor-pointer transform-3d"
 			whileHover={{ scale: 1.05 }}
-			whileTap={{ scale: 0.95 }}
+			whileTap={{ scale: 1.3 }}
+			whileDrag={{ scale: 1.3 }}
 			variants={cardVariants}
 			transition={{
-				duration: 0.8,
+				duration: 0.2,
 				ease: [0.25, 0.1, 0.25, 1],
 				rotateY: {
 					duration: 1.0,
