@@ -3,8 +3,12 @@ import AnimatedNumbers from "react-animated-numbers";
 import CardContainer, { type CardInfo } from "./components/CardContainer";
 import ProgressBar from "./components/ProgressBar";
 import YearCounter from "./components/YearCounter";
+import SelectGender from "./components/SelectGender";
+import { useGameState } from "./hooks/useGame";
 
 function App() {
+  const { gamePhase } = useGameState();
+
   const [count, setCount] = useState(0);
   const [age, setAge] = useState(20);
   const cardInfo: CardInfo[] = [
@@ -16,9 +20,10 @@ function App() {
   const MAX_AGE = 65;
 
   return (
-    <div className="relative">
+    <div className="relative min-h-screen h-screen w-screen">
+      {gamePhase === "setup" && <SelectGender />}
       <ProgressBar max={MAX_AGE} value={age} size="lg" />
-      <CardContainer cardsInfo={cardInfo} />
+      {<CardContainer cardsInfo={cardInfo} />}
       <YearCounter className="absolute top-4 right-4" />
       <AnimatedNumbers animateToNumber={count} fontStyle={{ fontSize: 48 }} />
       <button onClick={() => setCount(count + 10)}>Increase count</button>
