@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Skończyłeś 18 lat - co decydujesz?",
+    "decisions": [
+      "podejmujesz pracę na umowe UOP",
+      "idziesz na studia",
+      "pracujesz „na czarno”"
+    ],
+    "event_order_scenario_1": 1,
+    "event_order_scenario_2": 1,
+    "stats_changes": {
+      "podejmujesz pracę na umowę UOP": {
+        "zdrowie": -10,
+        "stres": -20,
+        "relacje": -10,
+        "mądrość": 5,
+        "devil": "Trzeba się w końcu uwolnić od rodziców!"
+      },
+      "idziesz na studia": {
+        "zdrowie": -10,
+        "stres": -30,
+        "relacje": 20,
+        "mądrość": 20,
+        "angel": "To może być dobra inwestycja w siebie!"
+      },
+      "pracujesz „na czarno”": {
+        "zdrowie": -15,
+        "stres": -20,
+        "relacje": -10,
+        "mądrość": 0,
+        "devil": "Trzeba się w końcu uwolnić od rodziców!"
+      }
+    },
+    "special_conditions": {
+      "podejmujesz pracę na umowe UOP": {
+        "status_zawodowy": "pracownik",
+        "wysokość_wypłaty": 4500,
+        "rodzaj_zatrudnienia": "UOP"
+      },
+      "idziesz na studia": {
+        "status_zawodowy": "student"
+      },
+      "pracujesz „na czarno”": {
+        "status_zawodowy": "pracownik",
+        "wysokość_wypłaty": 4500,
+        "rodzaj_zatrudnienia": "brak umowy"
+      }
+    }
+  }
+]

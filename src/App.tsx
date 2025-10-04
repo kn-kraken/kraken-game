@@ -7,8 +7,7 @@ function App() {
 
   return (
     <div className="relative min-h-screen h-screen w-screen">
-      {gamePhase === "setup" && <SelectGender />}
-      {gamePhase === "card_display" && <GameLayout />}
+      {gamePhase === "setup" ? <SelectGender /> : <GameLayout />}
     </div>
   );
 }
