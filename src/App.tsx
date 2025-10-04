@@ -3,14 +3,14 @@ import SelectGender from "./components/SelectGender";
 import { useGameState } from "./hooks/useGame";
 
 function App() {
-	const { gamePhase } = useGameState();
+  const { gamePhase } = useGameState();
 
-	return (
-		<div className="relative min-h-screen h-screen w-screen">
-			{gamePhase === "setup" && <SelectGender />}
-			{gamePhase === "card_display" && <GameLayout />}
-		</div>
-	);
+  return (
+    <div className="relative min-h-screen h-screen w-screen">
+      {gamePhase === "setup" && <SelectGender />}
+      {gamePhase === "card_display" && <GameLayout />}
+    </div>
+  );
 }
 
 export default App;

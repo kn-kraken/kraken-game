@@ -50,7 +50,6 @@ export const gameReducer = (
         playerStats: { ...INITIAL_PLAYER_STATS },
         gamePhase: GamePhase.CARD_DISPLAY,
         isGameActive: true,
-        turnNumber: 1,
       };
 
     case GameActionType.MAKE_CHOICE: {

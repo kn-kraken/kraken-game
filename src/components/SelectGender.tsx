@@ -43,8 +43,9 @@ export default function SelectGender() {
 
   return (
     <AnimatePresence>
+      <div className="w-screen h-screen absolute z-0 bg-black opacity-20"></div>
       <motion.div
-        className="w-full absolute top-0 bottom-0 m-auto h-18 flex gap-4 justify-center"
+        className="w-full absolute top-0 bottom-0 m-auto h-32 flex gap-32 justify-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -57,7 +58,7 @@ export default function SelectGender() {
           whileTap="tap"
         >
           Male
-          <Mars />
+          <Mars className="w-12 h-12" />
         </motion.button>
         <motion.button
           onClick={() => clickGender()}
@@ -67,7 +68,7 @@ export default function SelectGender() {
           whileTap="tap"
         >
           Female
-          <Venus />
+          <Venus className="w-12 h-12" />
         </motion.button>
       </motion.div>
     </AnimatePresence>
