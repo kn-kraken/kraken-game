@@ -2,28 +2,30 @@
   {
     "description": "Skończyłeś 18 lat - co decydujesz?",
     "decisions": [
-      "podejmujesz pracę na umowę UOP",
-      "idziesz na studia",
-      "pracujesz „na czarno”"
+      "Podejmujesz pracę na umowe UOP",
+      "Idziesz na studia",
+      "Pracujesz „na czarno”"
     ],
+    "photo_scenario_1": "natalka_basic.png",
+    "photo_scenario_2": "natalka_basic.png",
     "event_order_scenario_1": 1,
     "event_order_scenario_2": 1,
     "stats_changes": {
-      "podejmujesz pracę na umowę UOP": {
+      "Podejmujesz pracę na umowę UOP": {
         "zdrowie": -10,
         "stres": -20,
         "relacje": -10,
         "mądrość": 5,
         "devil": "Trzeba się w końcu uwolnić od rodziców!"
       },
-      "idziesz na studia": {
+      "Idziesz na studia": {
         "zdrowie": -10,
         "stres": -30,
         "relacje": 20,
         "mądrość": 20,
         "angel": "To może być dobra inwestycja w siebie!"
       },
-      "pracujesz „na czarno”": {
+      "Pracujesz „na czarno”": {
         "zdrowie": -15,
         "stres": -20,
         "relacje": -10,
@@ -32,15 +34,15 @@
       }
     },
     "special_conditions": {
-      "podejmujesz pracę na umowe UOP": {
+      "Podejmujesz pracę na umowe UOP": {
         "status_zawodowy": "pracownik",
         "wysokość_wypłaty": 4500,
         "rodzaj_zatrudnienia": "UOP"
       },
-      "idziesz na studia": {
+      "Idziesz na studia": {
         "status_zawodowy": "student"
       },
-      "pracujesz „na czarno”": {
+      "Pracujesz „na czarno”": {
         "status_zawodowy": "pracownik",
         "wysokość_wypłaty": 4500,
         "rodzaj_zatrudnienia": "brak umowy"
@@ -48,13 +50,12 @@
     }
   },
   {
-    "description": "Twój szef proponuje Ci dodatkowe zadanie, po którym dostajesz gwarancję awansu – decydujesz się?",
-    "decisions": [
-      "Tak",
-      "Nie"
-    ],
+    "description": "Twój szef proponuje Ci dodatkowe zadanie, po którym dostajesz gwarancję awansu - decydujesz się?",
+    "decisions": ["Tak", "Nie"],
+    "photo_scenario_1": "natalka_business.png",
+    "photo_scenario_2": "None",
     "event_order_scenario_1": 8,
-    "event_order_scenario_2": "",
+    "event_order_scenario_2": "None",
     "stats_changes": {
       "Tak": {
         "zdrowie": -5,
@@ -77,5 +78,513 @@
       },
       "Nie": {}
     }
+  },
+  {
+    "description": "Dostajesz pierwsze propozycje pracy w zawodzie - jaką ofertę przyjmujesz?",
+    "decisions": [
+      "UOP pełen wymiar",
+      "B2B pełen wymiar",
+      "UOP ½ etatu",
+      "B2B ½ etatu",
+      "Umowa zlecenie pełen wymiar",
+      "Umowa zlecenie ½ etatu"
+    ],
+    "photo_scenario_1": "natalka_grad.png",
+    "photo_scenario_2": "None",
+    "event_order_scenario_1": 4,
+    "event_order_scenario_2": "None",
+    "stats_changes": {
+      "UOP pełen wymiar": {
+        "zdrowie": 0,
+        "stres": 10,
+        "relacje": -10,
+        "mądrość": 10,
+        "angel": "Gratuluję pierwszej pracy!"
+      },
+      "B2B pełen wymiar": {
+        "zdrowie": 0,
+        "stres": 10,
+        "relacje": -10,
+        "mądrość": 10,
+        "angel": "Gratuluję pierwszej pracy!"
+      },
+      "UOP ½ etatu": {
+        "zdrowie": 0,
+        "stres": 5,
+        "relacje": -5,
+        "mądrość": 5,
+        "angel": "Gratuluję pierwszej pracy!"
+      },
+      "B2B ½ etatu": {
+        "zdrowie": 0,
+        "stres": 5,
+        "relacje": -5,
+        "mądrość": 5,
+        "angel": "Gratuluję pierwszej pracy!"
+      },
+      "Umowa zlecenie pełen wymiar": {
+        "zdrowie": 0,
+        "stres": 10,
+        "relacje": -10,
+        "mądrość": 10,
+        "angel": "Gratuluję pierwszej pracy!"
+      },
+      "Umowa zlecenie ½ etatu": {
+        "zdrowie": 0,
+        "stres": 5,
+        "relacje": -5,
+        "mądrość": 5,
+        "angel": "Gratuluję pierwszej pracy!"
+      }
+    },
+    "special_conditions": {
+      "UOP pełen wymiar": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 4500,
+        "rodzaj zatrudnienia": "UOP"
+      },
+      "B2B pełen wymiar": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 4500,
+        "rodzaj zatrudnienia": "B2B"
+      },
+      "UOP ½ etatu": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 2250,
+        "rodzaj zatrudnienia": "UOP"
+      },
+      "B2B ½ etatu": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 2250,
+        "rodzaj zatrudnienia": "B2B"
+      },
+      "Umowa zlecenie pełen wymiar": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 4500,
+        "rodzaj zatrudnienia": "umowa zlecenie"
+      },
+      "Umowa zlecenie ½ etatu": {
+        "status zawodowy": "pracownik",
+        "wysokość wypłaty": 2250,
+        "rodzaj zatrudnienia": "umowa zlecenie"
+      }
+    }
+  },
+  {
+    "description": "W Twojej pracy nastąpiła redukcja etatu i zostajesz zwolniony - co robisz?",
+    "decisions": [
+      "Szukam intensywnie nowej pracy",
+      "Inwestuję pieniądze w kryptowaluty",
+      "Podejmuje pracę u szwagra (bez umowy)",
+      "Zostaję bezrobotny"
+    ],
+    "photo_scenario_1": "None",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": null,
+    "event_order_scenario_2": 10,
+    "stats_changes": {
+      "Szukam intensywnie nowej pracy": {
+        "zdrowie": -5,
+        "stres": 15,
+        "relacje": -5,
+        "mądrość": 0,
+        "angel": "Aktywność popłaca! Wkrótce znajdziesz coś lepszego."
+      },
+      "Inwestuję pieniądze w kryptowaluty": {
+        "zdrowie": 0,
+        "stres": 30,
+        "relacje": -20,
+        "mądrość": 0,
+        "devil": "Łatwy zarobek to to, co lubię!"
+      },
+      "Podejmuje pracę u szwagra (bez umowy)": {
+        "zdrowie": 0,
+        "stres": 5,
+        "relacje": 10,
+        "mądrość": 0,
+        "devil": "Praca bez umowy to więcej kasy do kieszeni teraz!"
+      },
+      "Zostaję bezrobotny": {
+        "zdrowie": 0,
+        "stres": 10,
+        "relacje": -5,
+        "mądrość": 0,
+        "devil": "Nigdzie nie znajdę pracy jak ta, więc po co się starać."
+      }
+    },
+    "special_conditions": {
+      "Szukam intensywnie nowej pracy": {
+        "status_zawodowy": "bezrobotny",
+        "wysokosc_wyplaty": 0,
+        "rodzaj_zatrudnienia": "brak"
+      },
+      "Inwestuję pieniądze w kryptowaluty": {
+        "status_zawodowy": "bezrobotny",
+        "wysokosc_wyplaty": 0,
+        "rodzaj_zatrudnienia": "brak"
+      },
+      "Podejmuję pracę u szwagra (bez umowy)": {
+        "status_zawodowy": "pracownik",
+        "wysokosc_wyplaty": 4500,
+        "rodzaj_zatrudnienia": "brak umowy"
+      },
+      "Zostaję bezrobotny": {
+        "status_zawodowy": "bezrobotny",
+        "wysokosc_wyplaty": 0,
+        "rodzaj_zatrudnienia": "brak"
+      }
+    }
+  },
+  {
+    "description": "Nie pracujesz na UOP, ale Twoje dzieci marzą o wyjeździe na wakacje - czy bierzesz urlop bezpłatny na 2 tygodnie?",
+    "decisions": ["Tak", "Nie"],
+    "photo_scenario_1": "None",
+    "photo_scenario_2": "natalka_mom.png",
+    "event_order_scenario_1": null,
+    "event_order_scenario_2": 8,
+    "stats_changes": {
+      "Tak": {
+        "zdrowie": 5,
+        "stres": 0,
+        "relacje": 20,
+        "mądrość": 0,
+        "angel": "Super szansa by spędzić czas z dziećmi!"
+      },
+      "Nie": {
+        "zdrowie": 0,
+        "stres": 0,
+        "relacje": -15,
+        "mądrość": 0,
+        "devil": "Szkoda mi tych 2 tygodni zarobku, moje dzieci to zrozumieją."
+      }
+    },
+    "special_conditions": {
+      "Tak": {},
+      "Nie": {}
+    }
+  },
+  {
+    "description": "Twój partner marzeń poprosił o Twoją rękę! Co mu odpowiesz?",
+    "decisions": ["Tak", "Nie"],
+    "photo_scenario_1": "natalka_basic.png",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": 6,
+    "event_order_scenario_2": 6,
+    "stats_changes": {
+      "Tak": {
+        "zdrowie": 10,
+        "stres": 15,
+        "relacje": 30,
+        "mądrość": 0,
+        "angel": "Spełnienie moich najskrytszych marzeń!"
+      },
+      "Nie": {
+        "zdrowie": 0,
+        "stres": 15,
+        "relacje": -30,
+        "mądrość": 0,
+        "devil": "To nie Twoja wina tylko moja…."
+      }
+    },
+    "special_conditions": {
+      "Tak": {
+        "status matrymonialny": "zamężna"
+      },
+      "Nie": {}
+    }
+  },
+  {
+    "description": "Gratulacje! Zostałeś rodzicem. Jaki rodzaj urlopu wybierasz, zanim wrócisz do pracy?",
+    "decisions": [
+      "Macierzyński",
+      "Macierzyński, rodzicielski",
+      "Macierzyński, rodzicielski, wychowawczy"
+    ],
+    "photo_scenario_1": "natalka_mom.png",
+    "photo_scenario_2": "natalka_mom.png",
+    "event_order_scenario_1": 9,
+    "event_order_scenario_2": 5,
+    "stats_changes": {
+      "Macierzyński": {
+        "zdrowie": -10,
+        "stres": 20,
+        "relacje": 10,
+        "mądrość": 15,
+        "angel": "Szybki powrót do formy finansowej! Chociaż będzie intensywnie."
+      },
+      "Macierzyński, rodzicielski": {
+        "zdrowie": 5,
+        "stres": 0,
+        "relacje": 20,
+        "mądrość": 10,
+        "angel": "Zrównoważony czas dla dziecka i kariery. Świetny wybór!"
+      },
+      "Macierzyński, rodzicielski, wychowawczy": {
+        "zdrowie": 10,
+        "stres": 40,
+        "relacje": 30,
+        "mądrość": 5,
+        "devil": "Uważaj na duże straty finansowe i możliwe cofnięcie w karierze."
+      }
+    },
+    "special_conditions": {
+      "Macierzyński": {
+        "liczba dzieci": 1
+      },
+      "Macierzyński, rodzicielski": {
+        "liczba dzieci": 1
+      },
+      "Macierzyński, rodzicielski, wychowawczy": {
+        "liczba dzieci": 1
+      }
+    }
+  },
+  {
+    "description": "Niestety, ale Twoje małżeństwo nie jest już dłużej do naprawy. Rozpoczął się proces sądowy — co robisz?",
+    "decisions": ["Wynajmuję adwokata", "Rezygnuję z usług prawniczych"],
+    "photo_scenario_1": "None",
+    "photo_scenario_2": "natalka_mom.png",
+    "photo": "natalka_business.png",
+    "event_order_scenario_1": null,
+    "event_order_scenario_2": 9,
+    "stats_changes": {
+      "Wynajmuję adwokata": {
+        "zdrowie": 5,
+        "stres": -10,
+        "relacje": -30,
+        "mądrość": 10,
+        "angel": "Profesjonalna pomoc to mniejszy stres i większe szanse na sprawiedliwy podział majątku."
+      },
+      "Rezygnuję z usług prawniczych": {
+        "zdrowie": -15,
+        "stres": 30,
+        "relacje": -35,
+        "mądrość": 0,
+        "devil": "Przecież wygraną mam w kieszeni! To jego wina, że się rozwodzimy!"
+      }
+    },
+    "special_conditions": {
+      "Wynajmuję adwokata": {
+        "status matrymonialny": "wolny"
+      },
+      "Rezygnuję z usług prawniczych": {
+        "status matrymonialny": "wolny"
+      }
+    }
+  },
+  {
+    "description": "Czas wyprowadzić się od rodziców — na co się decydujesz?",
+    "decisions": [
+      "Wynajmuję mieszkanie",
+      "Kupuję mieszkanie na kredyt hipoteczny",
+      "Kupuję mieszkanie za gotówkę",
+      "Wprowadzam się do mieszkania czynszowego"
+    ],
+    "photo_scenario_1": "natalka_student.png",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": 2,
+    "event_order_scenario_2": 2,
+    "stats_changes": {
+      "Wynajmuję mieszkanie": {
+        "zdrowie": 5,
+        "stres": 10,
+        "relacje": -5,
+        "mądrość": 15,
+        "angel": "Elastyczność i swoboda! W sam raz na początek samodzielności."
+      },
+      "Kupuję mieszkanie na kredyt hipoteczny": {
+        "zdrowie": -5,
+        "stres": 20,
+        "relacje": -5,
+        "mądrość": 15,
+        "devil": "Muszę zacząć budować moje nieruchomościowe imperium!"
+      },
+      "Kupuję mieszkanie za gotówkę": {
+        "zdrowie": 5,
+        "stres": -5,
+        "relacje": -5,
+        "mądrość": 10,
+        "angel": "Zero długu i pełna wolność! Gratulacje!"
+      },
+      "Wprowadzam się do mieszkania czynszowego": {
+        "zdrowie": 5,
+        "stres": -5,
+        "relacje": -5,
+        "mądrość": 5,
+        "angel": "Najtańsza opcja na start. Pieniądze możesz przeznaczyć na inne cele."
+      }
+    },
+    "special_conditions": {
+      "Wynajmuję mieszkanie": {},
+      "Kupuję mieszkanie na kredyt hipoteczny": {},
+      "Kupuję mieszkanie za gotówkę": {},
+      "Wprowadzam się do mieszkania czynszowego": {}
+    }
+  },
+  {
+    "description": "Twój pracodawca oferuje dołączenie do jednego z dobrowolnych programów emerytalnych — co robisz?",
+    "decisions": [
+      "Wybieram Pracownicze Plany Kapitałowe (PPK)",
+      "Wybieram Pracownicze Plany Emerytalne (PPE)",
+      "Rezygnuję z planów na rzecz Indywidualnego Konta Emerytalnego (IKE)",
+      "Nie wybieram żadnego z planów"
+    ],
+    "photo_scenario_1": "natalka_business.png",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": 7,
+    "event_order_scenario_2": 7,
+    "stats_changes": {
+      "Wybieram Pracownicze Plany Kapitałowe (PPK)": {
+        "zdrowie": 0,
+        "stres": -5,
+        "relacje": 0,
+        "mądrość": 10,
+        "angel": "Świetna decyzja! Oszczędzasz z dopłatami od pracodawcy i państwa."
+      },
+      "Wybieram Pracownicze Plany Emerytalne (PPE)": {
+        "zdrowie": 0,
+        "stres": -5,
+        "relacje": 0,
+        "mądrość": 10,
+        "angel": "Dobrze! 100% wpłat pochodzi od pracodawcy. To jak ukryta podwyżka."
+      },
+      "Rezygnuję z planów na rzecz Indywidualnego Konta Emerytalnego (IKE)": {
+        "zdrowie": 0,
+        "stres": -5,
+        "relacje": 0,
+        "mądrość": 15,
+        "angel": "Pełna kontrola nad inwestycją i zwolnienie z podatku Belki. Wymaga jednak większej wiedzy ode mnie."
+      },
+      "Nie wybieram żadnego z planów": {
+        "zdrowie": 0,
+        "stres": 0,
+        "relacje": 0,
+        "mądrość": -10,
+        "devil": "Nie mam z czego odłożyć, mam już dużo wydatków!"
+      }
+    },
+    "special_conditions": {
+      "Wybieram Pracownicze Plany Kapitałowe (PPK)": {},
+      "Wybieram Pracownicze Plany Emerytalne (PPE)": {},
+      "Rezygnuję z planów na rzecz Indywidualnego Konta Emerytalnego (IKE)": {},
+      "Nie wybieram żadnego z planów": {}
+    }
+  },
+  {
+    "description": "Z braku czasu zaniedbałeś ostatnio swoje żywienie — co masz zamiar z tym zrobić?",
+    "decisions": [
+      "Kupuję i przygotowuję samodzielnie zdrowsze jedzenie",
+      "Kupuję zdrowy catering",
+      "Kontynuuję obecny styl żywieniowy"
+    ],
+    "photo_scenario_1": "None",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": 3,
+    "event_order_scenario_2": 4,
+    "stats_changes": {
+      "Kupuję i przygotowuję samodzielnie zdrowsze jedzenie": {
+        "zdrowie": 15,
+        "stres": 5,
+        "relacje": -5,
+        "mądrość": 10,
+        "angel": "Najlepsza kontrola nad składnikami! Wymaga czasu, ale się opłaca."
+      },
+      "Kupuję zdrowy catering": {
+        "zdrowie": 15,
+        "stres": -10,
+        "relacje": 0,
+        "mądrość": 0,
+        "angel": "Oszczędność czasu i dobre zdrowie. To inwestycja w wygodę."
+      },
+      "Kontynuuję obecny styl żywieniowy": {
+        "zdrowie": -15,
+        "stres": 5,
+        "relacje": 0,
+        "mądrość": 0,
+        "devil": "Nie mam czasu myśleć nad swoją dietą!"
+      }
+    },
+    "special_conditions": {
+      "Kupuję i przygotowuję samodzielnie zdrowsze jedzenie": {},
+      "Kupuję zdrowy catering": {},
+      "Kontynuuję obecny styl żywieniowy": {}
+    }
+  },
+  {
+    "description": "Aby mieć więcej przerw od wysiłku, zacząłeś palić papierosy — co z tym robisz?",
+    "decisions": [
+      "Przestaję palić, póki nie jest to nałóg",
+      "Kontynuuję palenie, by mieć przerwy"
+    ],
+    "photo_scenario_1": "None",
+    "photo_scenario_2": "natalka_lidl.png",
+    "event_order_scenario_1": null,
+    "event_order_scenario_2": 3,
+    "stats_changes": {
+      "Przestaję palić, póki nie jest to nałóg": {
+        "zdrowie": 10,
+        "stres": 5,
+        "relacje": 5,
+        "mądrość": 15,
+        "angel": "Oszczędzasz zdrowie i pieniądze, zanim powstanie nałóg!"
+      },
+      "Kontynuuję palenie, by mieć przerwy": {
+        "zdrowie": -15,
+        "stres": -5,
+        "relacje": -5,
+        "mądrość": -10,
+        "devil": "Nic się nie stanie, dopóki to tylko przerwy! A papieros świetnie łagodzi stres..."
+      }
+    },
+    "special_conditions": {
+      "Przestaję palić, póki nie jest to nałóg": {},
+      "Kontynuuję palenie, by mieć przerwy": {}
+    }
+  },
+  {
+    "description": "Źle się czujesz fizycznie, nie jesteś pewien, czy powinieneś pójść do pracy — co robisz?",
+    "decisions": ["Biorę L4", "Biorę urlop", "Idę do pracy"],
+    "photo_scenario_1": "natalka_sick.png",
+    "photo_scenario_2": "None",
+    "event_order_scenario_1": 5,
+    "event_order_scenario_2": null,
+    "stats_changes": {
+      "Biorę L4": {
+        "zdrowie": 10,
+        "stres": -10,
+        "relacje": 0,
+        "mądrość": 5,
+        "angel": "Zdrowie jest najważniejsze, a L4 pozwala na spokojny powrót do pełni sił bez strat finansowych."
+      },
+      "Biorę urlop": {
+        "zdrowie": 10,
+        "stres": 5,
+        "relacje": -5,
+        "mądrość": 0,
+        "devil": "Pracodawca nie lubi chorujących pracowników…"
+      },
+      "Idę do pracy": {
+        "zdrowie": -20,
+        "stres": 15,
+        "relacje": -10,
+        "mądrość": -10,
+        "devil": "Jeszcze dam radę popracować."
+      }
+    },
+    "special_conditions": {
+      "Biorę L4": {},
+      "Biorę urlop": {},
+      "Idę do pracy": {}
+    }
+  },
+  {
+    "description": "Czas na emeryturę!",
+    "decisions": [],
+    "photo_scenario_1": "natalka_grandma.png",
+    "photo_scenario_2": "natalka_grandma.png",
+    "event_order_scenario_1": 10,
+    "event_order_scenario_2": 11,
+    "stats_changes": {},
+    "special_conditions": {}
   }
 ]

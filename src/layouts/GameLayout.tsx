@@ -47,7 +47,21 @@ export default function GameLayout({ children }: GameLayoutProps) {
 
   const handleNextEvent = () => {
     actions.endTurn();
-    setCurrentEventIndex(scenario[currentEventIndex].event_order_scenario_1);
+
+    const currentOrder = scenario[currentEventIndex].event_order_scenario_1;
+    const nextOrder = currentOrder + 1;
+
+    // Find the index of the event with the next order number
+    const nextEventIndex = scenario.findIndex(
+      (event) => event.event_order_scenario_1 === nextOrder
+    );
+
+    if (nextEventIndex !== -1) {
+      setCurrentEventIndex(nextEventIndex);
+    } else {
+      // No next event found, game ends
+      setCurrentEventIndex(scenario.length);
+    }
   };
 
   useEffect(() => {
