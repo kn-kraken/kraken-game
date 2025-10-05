@@ -89,14 +89,14 @@ export default function GameLayout({ children }: GameLayoutProps) {
 
   return (
     <div className="min-h-screen bg-gray-100 flex">
-      <div className="flex-1 flex flex-col gap-4 p-4">
+      <div className="flex-2 flex flex-col gap-4 p-4">
         <StatusBar label="Zdrowie" value={health} />
         <StatusBar label="Stres" value={stress} />
         <StatusBar label="Relacje" value={relationships} />
         <StatusBar label="Wiedza" value={knowledge} />
         <YearCounter />
       </div>
-      <div className="flex-2">
+      <div className="flex-5">
         <BoardLayout
           cardsInfo={decisionsInfo}
           handleStatChange={handleStatChange}
@@ -107,7 +107,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
           {children}
         </BoardLayout>
       </div>
-      <div className="flex-1">
+      <div className="flex-2">
         <InventoryCardContainer />
       </div>
     </div>

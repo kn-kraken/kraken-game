@@ -6,6 +6,22 @@
       "Idziesz na studia",
       "Pracujesz „na czarno”"
     ],
+    "profil_scenario_1": {
+      "wiek": "18-24",
+      "status zawodowy": "Maturzysta",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
+    "profil_scenario_2": {
+      "wiek": "18-24",
+      "status zawodowy": "Maturzysta",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
     "photo_scenario_1": "natalka_basic.svg",
     "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 1,
@@ -52,6 +68,22 @@
   {
     "description": "Twój szef proponuje Ci dodatkowe zadanie, po którym dostajesz gwarancję awansu - decydujesz się?",
     "decisions": ["Tak", "Nie"],
+    "profil_scenario_1": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Zamężna",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_business.svg",
     "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 8,
@@ -89,6 +121,22 @@
       "Umowa zlecenie pełen wymiar",
       "Umowa zlecenie ½ etatu"
     ],
+    "profil_scenario_1": {
+      "wiek": "25-30",
+      "status zawodowy": "Student",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
+    "profil_scenario_2": {
+      "wiek": "25-30",
+      "status zawodowy": "Student",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
     "photo_scenario_1": "natalka_grad.svg",
     "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 4,
@@ -178,6 +226,22 @@
       "Podejmuje pracę u szwagra (bez umowy)",
       "Zostaję bezrobotny"
     ],
+    "profil_scenario_1": {
+      "wiek": "40-50",
+      "status zawodowy": "Bezrobotny",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Brak"
+    },
+    "profil_scenario_2": {
+      "wiek": "50-65",
+      "status zawodowy": "Bezrobotny",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Brak"
+    },
     "photo_scenario_1": "natalka_grad.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": null,
@@ -238,6 +302,14 @@
   {
     "description": "Nie pracujesz na UOP, ale Twoje dzieci marzą o wyjeździe na wakacje - czy bierzesz urlop bezpłatny na 2 tygodnie?",
     "decisions": ["Tak", "Nie"],
+    "profil": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Zamężna",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_grad.svg",
     "photo_scenario_2": "natalka_mom.svg",
     "event_order_scenario_1": null,
@@ -266,6 +338,22 @@
   {
     "description": "Twój partner marzeń poprosił o Twoją rękę! Co mu odpowiesz?",
     "decisions": ["Tak", "Nie"],
+    "profil_scenario_1": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "40-50",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_basic.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 6,
@@ -300,6 +388,22 @@
       "Macierzyński, rodzicielski",
       "Macierzyński, rodzicielski, wychowawczy"
     ],
+    "profil_scenario_1": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Zamężna",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "9000.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_mom.svg",
     "photo_scenario_2": "natalka_mom.svg",
     "event_order_scenario_1": 9,
@@ -342,6 +446,22 @@
   {
     "description": "Niestety, ale Twoje małżeństwo nie jest już dłużej do naprawy. Rozpoczął się proces sądowy — co robisz?",
     "decisions": ["Wynajmuję adwokata", "Rezygnuję z usług prawniczych"],
+    "profil_scenario_1": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "40-50",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_mom.svg",
     "photo_scenario_2": "natalka_mom.svg",
     "photo": "natalka_business.png",
@@ -380,6 +500,22 @@
       "Kupuję mieszkanie za gotówkę",
       "Wprowadzam się do mieszkania czynszowego"
     ],
+    "profil_scenario_1": {
+      "wiek": "18-24",
+      "status zawodowy": "Student",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
+    "profil_scenario_2": {
+      "wiek": "18-24",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_student.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 2,
@@ -429,6 +565,22 @@
       "Rezygnuję z planów na rzecz Indywidualnego Konta Emerytalnego (IKE)",
       "Nie wybieram żadnego z planów"
     ],
+    "profil_scenario_1": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Zamężna",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "30-40",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_business.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 7,
@@ -477,6 +629,22 @@
       "Kupuję zdrowy catering",
       "Kontynuuję obecny styl żywieniowy"
     ],
+    "profil_scenario_1": {
+      "wiek": "18-24",
+      "status zawodowy": "Student",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Bezrobotny"
+    },
+    "profil_scenario_2": {
+      "wiek": "25-30",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_business.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 3,
@@ -516,6 +684,22 @@
       "Przestaję palić, póki nie jest to nałóg",
       "Kontynuuję palenie, by mieć przerwy"
     ],
+    "profil_scenario_1": {
+      "wiek": "25-30",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "25-30",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_business.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": null,
@@ -544,6 +728,22 @@
   {
     "description": "Źle się czujesz fizycznie, nie jesteś pewien, czy powinieneś pójść do pracy — co robisz?",
     "decisions": ["Biorę L4", "Biorę urlop", "Idę do pracy"],
+    "profil_scenario_1": {
+      "wiek": "25-30",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
+    "profil_scenario_2": {
+      "wiek": "25-30",
+      "status zawodowy": "Pracownik",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "0",
+      "wysokosc wyplaty": "4500.0",
+      "rodzaj zatrudnienia": "Umowa o pracę"
+    },
     "photo_scenario_1": "natalka_sick.svg",
     "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 5,
@@ -579,6 +779,22 @@
   },
   {
     "description": "Czas na emeryturę!",
+    "profil_scenario_1": {
+      "wiek": "65+",
+      "status zawodowy": "Emeryt",
+      "status matrymonialny": "Zamężna",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Emerytura"
+    },
+    "profil_scenario_2": {
+      "wiek": "65+",
+      "status zawodowy": "Emeryt",
+      "status matrymonialny": "Wolny",
+      "liczba dzieci": "1",
+      "wysokosc wyplaty": "0.0",
+      "rodzaj zatrudnienia": "Emerytura"
+    },
     "decisions": [],
     "photo_scenario_1": "natalka_grandma.svg",
     "photo_scenario_2": "natalka_grandma.svg",
