@@ -46,6 +46,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
   };
 
   const handleNextEvent = () => {
+    actions.endTurn();
     setCurrentEventIndex(scenario[currentEventIndex].event_order_scenario_1);
   };
 
