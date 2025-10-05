@@ -11,7 +11,7 @@ export const cn = (...inputs: ClassValue[]): string => {
   return twMerge(clsx(inputs));
 };
 
-export const run = 2 as const;
+export const run = 1 as const;
 
 /**
  * Gets the correct avatar filename based on the run variable and scenario data

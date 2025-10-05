@@ -114,7 +114,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
         </BoardLayout>
       </div>
       <div className="flex-2">
-        <InventoryCardContainer />
+        <InventoryCardContainer currentEventIndex={currentEventIndex} />
       </div>
     </div>
   );
