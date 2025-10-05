@@ -7,5 +7,5 @@ type Props = {
 export default function YearCounter({ className }: Props) {
   const state = useGameState();
 
-  return <div className={className}>Years: {state.turnNumber}</div>;
+  return <h1 className={className}>LVL {state.turnNumber}</h1>;
 }

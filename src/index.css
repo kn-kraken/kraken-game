@@ -5,6 +5,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Sink Retro Sans Serif";
+  src: url("/fonts/Sink —  Retro Sans Serif Font/Files/Sink.ttf")
+      format("truetype"),
+    url("/fonts/Sink —  Retro Sans Serif Font/Files/Sink.otf")
+      format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -118,5 +129,8 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  h1 {
+    font-family: "Sink Retro Sans Serif", serif;
   }
 }

@@ -102,12 +102,12 @@ export default function BoardLayout({
             <img
               src={`/public/natalia/${avatarFilename}`}
               alt="Natalia avatar"
-              className="w-96 h-96 object-cover rounded-full mb-4"
+              className="w-96 h-96 object-cover rounded-full mb-4 border-3 border-t-1 border-black"
             />
           </div>
         )}
         {children}
-        <p className="p-4 text-lg left-0 rounded-xl justify-center mx-auto text-center bg-white bg-opacity-80">
+        <p className="p-4 text-lg left-0 rounded-xl border-b-3 border-black justify-center mx-auto text-center bg-white bg-opacity-80">
           {description}
         </p>
       </div>

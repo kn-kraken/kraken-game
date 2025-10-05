@@ -34,7 +34,7 @@ export const getAvatarFilename = (scenario: Scenario): string | null => {
 export const PHOTO_MAPPING = {
   "podejmujesz pracę na umowe uop": 23,
   "idziesz na studia": 29,
-  'pracujesz „na czarno"': 28,
+  "pracujesz na czarno": 28,
   tak: 25,
   nie: 26,
   "uop pełen wymiar": 23,

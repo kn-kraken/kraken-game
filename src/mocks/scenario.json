@@ -4,7 +4,7 @@
     "decisions": [
       "Podejmujesz pracę na umowe UOP",
       "Idziesz na studia",
-      "Pracujesz „na czarno”"
+      "Pracujesz na czarno"
     ],
     "profil_scenario_1": {
       "wiek": "18-24",
@@ -41,7 +41,7 @@
         "mądrość": 20,
         "angel": "To może być dobra inwestycja w siebie!"
       },
-      "Pracujesz „na czarno”": {
+      "Pracujesz na czarno": {
         "zdrowie": -15,
         "stres": -20,
         "relacje": -10,
@@ -58,7 +58,7 @@
       "Idziesz na studia": {
         "status_zawodowy": "student"
       },
-      "Pracujesz „na czarno”": {
+      "Pracujesz na czarno": {
         "status_zawodowy": "pracownik",
         "wysokość_wypłaty": 4500,
         "rodzaj_zatrudnienia": "brak umowy"

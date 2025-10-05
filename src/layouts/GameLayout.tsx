@@ -6,6 +6,7 @@ import BoardLayout from "./BoardLayout";
 import scenario from "../mocks/scenario.json";
 import { useGameActions } from "../hooks/useGame";
 import type { Scenario } from "../types/game";
+import Okno from "/public/okno_bok.svg";
 
 type GameLayoutProps = {
   children: React.ReactNode;
@@ -90,11 +91,16 @@ export default function GameLayout({ children }: GameLayoutProps) {
   return (
     <div className="min-h-screen bg-gray-100 flex">
       <div className="flex-2 flex flex-col gap-4 p-4">
-        <StatusBar label="Zdrowie" value={health} />
-        <StatusBar label="Stres" value={stress} />
-        <StatusBar label="Relacje" value={relationships} />
-        <StatusBar label="Wiedza" value={knowledge} />
-        <YearCounter />
+        <div className="relative z-10 w-full h-full">
+          <Okno className="absolute top-0 w-full h-fit" />
+          <div className="px-8 pt-12 flex flex-col justify-between h-[600px]">
+            <StatusBar label="Zdrowie" value={health} />
+            <StatusBar label="Stres" value={stress} />
+            <StatusBar label="Relacje" value={relationships} />
+            <StatusBar label="Wiedza" value={knowledge} />
+            <YearCounter className="text-[5rem] underline ml-auto pr-18" />
+          </div>
+        </div>
       </div>
       <div className="flex-5">
         <BoardLayout
