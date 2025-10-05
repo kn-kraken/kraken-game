@@ -150,10 +150,10 @@ export const RETIREMENT_AGE = 65;
 export const STARTING_AGE = 18;
 
 export interface StatsChanges {
-  zdrowie: number;
-  stres: number;
-  relacje: number;
-  mądrość: number;
+  zdrowie?: number;
+  stres?: number;
+  relacje?: number;
+  mądrość?: number;
   angel?: string;
   devil?: string;
 }
@@ -167,10 +167,12 @@ export interface SpecialConditions {
 export interface Scenario {
   description: string;
   decisions: string[];
-  event_order_scenario_1: number;
-  event_order_scenario_2: number;
-  stats_changes: Record<string, StatsChanges>;
-  special_conditions: Record<string, SpecialConditions>;
+  photo_scenario_1: string;
+  photo_scenario_2: string;
+  event_order_scenario_1: number | null;
+  event_order_scenario_2: number | null;
+  stats_changes: Record<string, StatsChanges | undefined>;
+  special_conditions: Record<string, SpecialConditions | undefined>;
 }
 
 export interface CallAngelAction {

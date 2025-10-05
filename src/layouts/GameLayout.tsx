@@ -5,6 +5,7 @@ import YearCounter from "../components/YearCounter";
 import BoardLayout from "./BoardLayout";
 import scenario from "../mocks/scenario.json";
 import { useGameActions } from "../hooks/useGame";
+import type { Scenario } from "../types/game";
 
 type GameLayoutProps = {
   children: React.ReactNode;
@@ -100,6 +101,7 @@ export default function GameLayout({ children }: GameLayoutProps) {
           cardsInfo={decisionsInfo}
           handleStatChange={handleStatChange}
           description={scenario[currentEventIndex]?.description}
+          currentScenario={scenario[currentEventIndex] as Scenario}
           handleNextEvent={handleNextEvent}
         >
           {children}
