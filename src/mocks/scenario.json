@@ -6,8 +6,8 @@
       "Idziesz na studia",
       "Pracujesz „na czarno”"
     ],
-    "photo_scenario_1": "natalka_basic.png",
-    "photo_scenario_2": "natalka_basic.png",
+    "photo_scenario_1": "natalka_basic.svg",
+    "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 1,
     "event_order_scenario_2": 1,
     "stats_changes": {
@@ -52,8 +52,8 @@
   {
     "description": "Twój szef proponuje Ci dodatkowe zadanie, po którym dostajesz gwarancję awansu - decydujesz się?",
     "decisions": ["Tak", "Nie"],
-    "photo_scenario_1": "natalka_business.png",
-    "photo_scenario_2": "natalka_basic.png",
+    "photo_scenario_1": "natalka_business.svg",
+    "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 8,
     "event_order_scenario_2": "None",
     "stats_changes": {
@@ -89,8 +89,8 @@
       "Umowa zlecenie pełen wymiar",
       "Umowa zlecenie ½ etatu"
     ],
-    "photo_scenario_1": "natalka_grad.png",
-    "photo_scenario_2": "natalka_basic.png",
+    "photo_scenario_1": "natalka_grad.svg",
+    "photo_scenario_2": "natalka_basic.svg",
     "event_order_scenario_1": 4,
     "event_order_scenario_2": "None",
     "stats_changes": {
@@ -178,8 +178,8 @@
       "Podejmuje pracę u szwagra (bez umowy)",
       "Zostaję bezrobotny"
     ],
-    "photo_scenario_1": "natalka_grad.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_grad.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": null,
     "event_order_scenario_2": 10,
     "stats_changes": {
@@ -238,8 +238,8 @@
   {
     "description": "Nie pracujesz na UOP, ale Twoje dzieci marzą o wyjeździe na wakacje - czy bierzesz urlop bezpłatny na 2 tygodnie?",
     "decisions": ["Tak", "Nie"],
-    "photo_scenario_1": "natalka_grad.png",
-    "photo_scenario_2": "natalka_mom.png",
+    "photo_scenario_1": "natalka_grad.svg",
+    "photo_scenario_2": "natalka_mom.svg",
     "event_order_scenario_1": null,
     "event_order_scenario_2": 8,
     "stats_changes": {
@@ -266,8 +266,8 @@
   {
     "description": "Twój partner marzeń poprosił o Twoją rękę! Co mu odpowiesz?",
     "decisions": ["Tak", "Nie"],
-    "photo_scenario_1": "natalka_basic.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_basic.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 6,
     "event_order_scenario_2": 6,
     "stats_changes": {
@@ -300,8 +300,8 @@
       "Macierzyński, rodzicielski",
       "Macierzyński, rodzicielski, wychowawczy"
     ],
-    "photo_scenario_1": "natalka_mom.png",
-    "photo_scenario_2": "natalka_mom.png",
+    "photo_scenario_1": "natalka_mom.svg",
+    "photo_scenario_2": "natalka_mom.svg",
     "event_order_scenario_1": 9,
     "event_order_scenario_2": 5,
     "stats_changes": {
@@ -342,8 +342,8 @@
   {
     "description": "Niestety, ale Twoje małżeństwo nie jest już dłużej do naprawy. Rozpoczął się proces sądowy — co robisz?",
     "decisions": ["Wynajmuję adwokata", "Rezygnuję z usług prawniczych"],
-    "photo_scenario_1": "natalka_mom.png",
-    "photo_scenario_2": "natalka_mom.png",
+    "photo_scenario_1": "natalka_mom.svg",
+    "photo_scenario_2": "natalka_mom.svg",
     "photo": "natalka_business.png",
     "event_order_scenario_1": null,
     "event_order_scenario_2": 9,
@@ -380,8 +380,8 @@
       "Kupuję mieszkanie za gotówkę",
       "Wprowadzam się do mieszkania czynszowego"
     ],
-    "photo_scenario_1": "natalka_student.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_student.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 2,
     "event_order_scenario_2": 2,
     "stats_changes": {
@@ -429,8 +429,8 @@
       "Rezygnuję z planów na rzecz Indywidualnego Konta Emerytalnego (IKE)",
       "Nie wybieram żadnego z planów"
     ],
-    "photo_scenario_1": "natalka_business.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_business.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 7,
     "event_order_scenario_2": 7,
     "stats_changes": {
@@ -477,8 +477,8 @@
       "Kupuję zdrowy catering",
       "Kontynuuję obecny styl żywieniowy"
     ],
-    "photo_scenario_1": "natalka_business.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_business.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 3,
     "event_order_scenario_2": 4,
     "stats_changes": {
@@ -516,8 +516,8 @@
       "Przestaję palić, póki nie jest to nałóg",
       "Kontynuuję palenie, by mieć przerwy"
     ],
-    "photo_scenario_1": "natalka_business.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_business.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": null,
     "event_order_scenario_2": 3,
     "stats_changes": {
@@ -544,8 +544,8 @@
   {
     "description": "Źle się czujesz fizycznie, nie jesteś pewien, czy powinieneś pójść do pracy — co robisz?",
     "decisions": ["Biorę L4", "Biorę urlop", "Idę do pracy"],
-    "photo_scenario_1": "natalka_sick.png",
-    "photo_scenario_2": "natalka_lidl.png",
+    "photo_scenario_1": "natalka_sick.svg",
+    "photo_scenario_2": "natalka_lidl.svg",
     "event_order_scenario_1": 5,
     "event_order_scenario_2": null,
     "stats_changes": {
@@ -580,8 +580,8 @@
   {
     "description": "Czas na emeryturę!",
     "decisions": [],
-    "photo_scenario_1": "natalka_grandma.png",
-    "photo_scenario_2": "natalka_grandma.png",
+    "photo_scenario_1": "natalka_grandma.svg",
+    "photo_scenario_2": "natalka_grandma.svg",
     "event_order_scenario_1": 10,
     "event_order_scenario_2": 11,
     "stats_changes": {},
